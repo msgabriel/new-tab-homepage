@@ -18,7 +18,6 @@ export function Focus() {
       <textarea
         id="focus"
         placeholder={randoItem(quotes)}
-        spellCheck={false}
         value={focus}
         onChange={event => {
           setFocus(event.target.value)

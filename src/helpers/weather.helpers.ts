@@ -1,20 +1,38 @@
-function convertToCelsius(K: number) {
-  return K - 273.15
+function getTemperatureUnit(countryCode?: string) {
+  const region =
+    countryCode?.toUpperCase() ||
+    Intl.DateTimeFormat().resolvedOptions().locale.split('-')[1]?.toUpperCase()
+
+  const fahrenheitCountries = ['US', 'BS', 'BZ', 'KY', 'PW', 'LR', 'FM', 'MH']
+
+  return region && fahrenheitCountries.includes(region)
+    ? 'fahrenheit'
+    : 'celsius'
 }
 
-export function formatTemperature(temp: number) {
-  return Math.round(convertToCelsius(temp)) + '°C'
+export function formatTemperature(K: number, countryCode?: string) {
+  const unit = getTemperatureUnit(countryCode)
+
+  const value = unit === 'fahrenheit' ? ((K - 273.15) * 9) / 5 + 32 : K - 273.15
+
+  return new Intl.NumberFormat(navigator.language, {
+    style: 'unit',
+    unit,
+    maximumFractionDigits: 0,
+  }).format(value)
 }
 
 export function formatSunsetTime(unixTimestamp: number) {
   const date = new Date(unixTimestamp * 1000)
-  return date.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+
+  return new Intl.DateTimeFormat(navigator.language, {
+    timeStyle: 'short',
+  }).format(date)
 }
 
 export function formatPrecipitation(pop: number) {
-  return `${pop.toLocaleString('en', { style: 'percent' })}`
-}
-
-export function isDaytime(now: number, sunrise: number, sunset: number) {
-  return now > sunrise && now < sunset
+  return new Intl.NumberFormat(navigator.language, {
+    style: 'percent',
+    maximumFractionDigits: 0,
+  }).format(pop)
 }

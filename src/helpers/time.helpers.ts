@@ -1,18 +1,18 @@
 export const now: Date = new Date()
 export const unixtime = now.getTime() / 1000
-// const locale = Intl.DateTimeFormat().resolvedOptions().locale
 
 export function getDate(date: Date) {
-  return new Intl.DateTimeFormat('en-US', {
+  return new Intl.DateTimeFormat(navigator.language, {
     weekday: 'short',
     month: 'short',
-    day: 'numeric',
-  }).format(date)
+    day: '2-digit',
+  })
+    .format(date)
+    .replace(/\./g, '')
 }
 
 export function getTime(date: Date) {
-  return new Intl.DateTimeFormat('en-US', {
-    hour: '2-digit',
-    minute: '2-digit',
+  return new Intl.DateTimeFormat(navigator.language, {
+    timeStyle: 'short',
   }).format(date)
 }

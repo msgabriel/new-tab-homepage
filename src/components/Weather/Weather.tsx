@@ -137,7 +137,10 @@ export function Weather() {
       <>
         <div className={styles.weather}>
           <p className={styles.temperature}>
-            {formatTemperature(realtimeWeather.main.temp)}
+            {formatTemperature(
+              realtimeWeather.main.temp,
+              realtimeWeather.sys.country,
+            )}
           </p>
           <p>{realtimeWeather.weather[0].description}</p>
         </div>

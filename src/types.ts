@@ -5,6 +5,7 @@ export interface IRealtimeWeather {
     temp: number
   }
   sys: {
+    country: string
     sunrise: number
     sunset: number
   }
