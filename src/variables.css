@@ -1,34 +1,24 @@
 :root {
-  --gray-950: oklch(0.22 0.0209 264);
-  --gray-900: oklch(0.33 0.0292 275);
-  --gray-600: oklch(0.42 0.0346 286);
-  --gray-400: oklch(0.62 0.0345 265);
-  --gray-300: oklch(0.73 0.0292 280);
-  --gray-200: oklch(0.82 0.0093 286);
-  --gray-100: oklch(0.94 0.0093 286);
-  --gray-050: oklch(0.97 0.0093 286);
+  color-scheme: light dark;
+
+  --gray-050: oklch(98% 0.005 280);
+  --gray-100: oklch(92% 0.016 280);
+  --gray-200: oklch(80% 0.024 280);
+  --gray-300: oklch(72% 0.026 280);
+  --gray-400: oklch(64% 0.034 280);
+  --gray-500: oklch(58% 0.036 280);
+  --gray-600: oklch(48% 0.036 280);
+  --gray-700: oklch(34% 0.034 280);
+  --gray-800: oklch(26% 0.022 280);
+  --gray-900: oklch(16% 0.016 280);
+  --gray-950: oklch(10% 0.022 280);
 
   --white: oklch(1 0 0);
+  --alpha-black: oklch(10% 0.022 280 / 60%);
 
-  --lime-300: oklch(0.69 0.17 132);
-  --lime-400: oklch(0.44 0.17 132);
-
-  --text-primary: var(--gray-950);
-  --text-secondary: var(--gray-600);
-  --text-tertiary: var(--gray-400);
-  --text-placeholder: var(--gray-300);
-  --text-accent: var(--lime-300);
-  --text-accent-solid: var(--lime-400);
-
-  --bg-primary: var(--gray-050);
-  --bg-secondary: var(--white);
-  --bg-primary-solid: var(--gray-950);
-  --bg-secondary-solid: var(--gray-900);
-  --bg-disabled: var(--gray-400);
-
-  --fg-accent: var(--lime-300);
-  --fg-primary: var(--gray-600);
-  --fg-primary-solid: var(--gray-950);
+  --lime-300: oklch(0.7 0.18 128);
+  --lime-400: oklch(0.64 0.18 128);
+  --lime-500: oklch(0.54 0.28 128);
 
   --fw-light: 300;
   --fw-regular: 400;
@@ -38,13 +28,62 @@
   --border-radius-sm: 8px;
   --border-radius-md: 16px;
   --border-radius-lg: 24px;
+}
 
-  --border-primary: var(--gray-100);
-  --border-primary-solid: var(--gray-950);
-  --border-secondary: var(--gray-200);
-  --border-accent: var(--lime-300);
+@media (prefers-color-scheme: light) {
+  :root {
+    --text-primary: var(--gray-950);
+    --text-secondary: var(--gray-700);
+    --text-tertiary: var(--gray-400);
+    --text-placeholder: var(--gray-300);
+    --text-accent: var(--lime-400);
+    --text-accent-solid: var(--lime-500);
 
-  --shadow:
-    0 1px 2px 0 rgba(0, 0, 0, 0.03), 0 1px 6px -1px rgba(0, 0, 0, 0.02),
-    0 2px 4px 0 rgba(0, 0, 0, 0.02);
+    --bg-primary: var(--gray-050);
+    --bg-secondary: var(--white);
+    --bg-primary-solid: var(--gray-950);
+    --bg-primary-solid_hover: var(--gray-800);
+    --bg-disabled: var(--gray-400);
+
+    --fg-accent: var(--lime-400);
+    --fg-primary: var(--gray-600);
+    --fg-primary-solid: var(--gray-950);
+
+    --border-primary: var(--gray-100);
+    --border-primary-solid: var(--gray-950);
+    --border-secondary: var(--gray-200);
+    --border-accent: var(--lime-400);
+
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05),
+      0 1px 6px -1px rgba(0, 0, 0, 0.04), 0 2px 4px 0 rgba(0, 0, 0, 0.03);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text-primary: var(--gray-050);
+    --text-secondary: var(--gray-100);
+    --text-tertiary: var(--gray-300);
+    --text-placeholder: var(--gray-600);
+    --text-accent: var(--lime-400);
+    --text-accent-solid: var(--lime-300);
+
+    --bg-primary: var(--gray-950);
+    --bg-secondary: var(--gray-900);
+    --bg-primary-solid: var(--gray-050);
+    --bg-primary-solid_hover: var(--gray-100);
+    --bg-disabled: var(--gray-600);
+
+    --fg-accent: var(--lime-400);
+    --fg-primary: var(--gray-300);
+    --fg-primary-solid: var(--gray-050);
+
+    --border-primary: var(--gray-800);
+    --border-primary-solid: var(--gray-050);
+    --border-secondary: var(--gray-700);
+    --border-accent: var(--lime-400);
+
+    --shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.5), 0 1px 6px -1px rgba(0, 0, 0, 0.4),
+      0 2px 4px 0 rgba(0, 0, 0, 0.3);
+  }
 }

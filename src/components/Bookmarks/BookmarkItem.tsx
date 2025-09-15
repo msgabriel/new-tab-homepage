@@ -1,5 +1,8 @@
 import { useEffect, useState } from 'react'
-import { getFavicon, isFaviconWhite } from '../../helpers/bookmark.helpers'
+import {
+  getFavicon,
+  getFaviconBrightness,
+} from '../../helpers/bookmark.helpers'
 import { SiteBookmark } from '../../hooks/useBookmarks'
 import { Button } from '../Button'
 import styles from './Bookmarks.module.css'
@@ -31,16 +34,33 @@ export function BookmarkItem({
   onDragEnd,
   isDraggedOver,
 }: BookmarkItemProps) {
-  const [isWhite, setIsWhite] = useState(false)
+  const [faviconBrightness, setFaviconBrightness] = useState<
+    'white' | 'black' | 'other'
+  >('other')
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia('(prefers-color-scheme: dark)').matches,
+  )
 
   useEffect(() => {
     const checkFavicon = async () => {
       const faviconUrl = getFavicon(bookmark.url)
-      const white = await isFaviconWhite(faviconUrl)
-      setIsWhite(white)
+      const brightness = await getFaviconBrightness(faviconUrl)
+      setFaviconBrightness(brightness)
     }
     checkFavicon()
   }, [bookmark.url])
+
+  useEffect(() => {
+    const media = window.matchMedia('(prefers-color-scheme: dark)')
+    const listener = (e: MediaQueryListEvent) => setDarkMode(e.matches)
+
+    media.addEventListener('change', listener)
+    return () => media.removeEventListener('change', listener)
+  }, [])
+
+  const invertFavicon =
+    (faviconBrightness === 'white' && !darkMode) ||
+    (faviconBrightness === 'black' && darkMode)
 
   return (
     <li onDragOver={e => onDragOver(e, index)}>
@@ -56,13 +76,17 @@ export function BookmarkItem({
       >
         <div
           data-type="bookmark-icon"
-          className={`${styles.bookmarkIcon} ${isDraggedOver ? styles.dragOver : ''}`}
-          style={{
-            backgroundImage: isWhite
-              ? `url(${getFavicon(bookmark.url)}), radial-gradient(circle, oklch(74% 0.027 269) 1%, white 70%)`
-              : `url(${getFavicon(bookmark.url)})`,
-          }}
-        />
+          className={`${styles.bookmarkIcon} ${
+            isDraggedOver ? styles.dragOver : ''
+          }`}
+        >
+          <img
+            src={getFavicon(bookmark.url)}
+            alt="favicon"
+            className={styles.faviconImage}
+            style={{ filter: invertFavicon ? 'invert(1)' : 'none' }}
+          />
+        </div>
         <div className={styles.bookmarkTitle}>
           <p>{bookmark.title}</p>
         </div>

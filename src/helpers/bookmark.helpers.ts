@@ -12,63 +12,49 @@ export function getFavicon(u: string, size: string = '32') {
   return url.toString()
 }
 
-export function isFaviconWhite(faviconUrl: string): Promise<boolean> {
+export function getFaviconBrightness(
+  faviconUrl: string,
+): Promise<'white' | 'black' | 'other'> {
   return new Promise(resolve => {
     const img = new Image()
-
+    img.crossOrigin = 'anonymous'
     img.onload = () => {
       const canvas = document.createElement('canvas')
       const ctx = canvas.getContext('2d')
-
-      if (!ctx) {
-        resolve(false)
-        return
-      }
+      if (!ctx) return resolve('other')
 
       canvas.width = img.width
       canvas.height = img.height
-
       ctx.drawImage(img, 0, 0)
 
       try {
-        const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height)
-        const data = imageData.data
-
+        const data = ctx.getImageData(0, 0, canvas.width, canvas.height).data
         let whitePixels = 0
+        let blackPixels = 0
         let transparentPixels = 0
         const totalPixels = data.length / 4
 
         for (let i = 0; i < data.length; i += 4) {
-          const r = data[i]
-          const g = data[i + 1]
-          const b = data[i + 2]
-          const a = data[i + 3]
-
-          // Count transparent pixels
-          if (a < 10) {
-            transparentPixels++
-          }
-          // Count pure white
-          else if (r === 255 && g === 255 && b === 255) {
-            whitePixels++
-          }
+          const r = data[i],
+            g = data[i + 1],
+            b = data[i + 2],
+            a = data[i + 3]
+          if (a < 10) transparentPixels++
+          else if (r === 255 && g === 255 && b === 255) whitePixels++
+          else if (r === 0 && g === 0 && b === 0) blackPixels++
         }
 
-        // Return true if more than 60% of non-transparent pixels are white
-        const nonTransparentPixels = totalPixels - transparentPixels
-        const isWhite =
-          nonTransparentPixels > 0 && whitePixels / nonTransparentPixels === 1
+        const nonTransparent = totalPixels - transparentPixels
+        if (nonTransparent === 0) return resolve('other')
 
-        resolve(isWhite)
-      } catch (error) {
-        resolve(false)
+        if (whitePixels / nonTransparent === 1) return resolve('white')
+        if (blackPixels / nonTransparent === 1) return resolve('black')
+        return resolve('other')
+      } catch {
+        resolve('other')
       }
     }
-
-    img.onerror = () => {
-      resolve(false)
-    }
-
+    img.onerror = () => resolve('other')
     img.src = faviconUrl
   })
 }

@@ -32,15 +32,16 @@
 }
 
 .bookmarkIcon {
-  background-color: var(--white);
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: var(--bg-secondary);
   border-radius: var(--border-radius-md);
   border: 1px solid var(--border-primary);
   width: 64px;
   height: 64px;
   margin: auto;
   transition: border 0.5ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .bookmarkIcon.dragOver {

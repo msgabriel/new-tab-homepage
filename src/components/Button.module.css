@@ -1,7 +1,7 @@
 .primary {
   padding: 8px 16px;
   background-color: var(--bg-primary-solid);
-  color: var(--white);
+  color: var(--bg-secondary);
   border: 1px solid transparent;
   border-radius: var(--border-radius-sm);
   cursor: pointer;
@@ -9,7 +9,7 @@
 }
 
 .primary:hover {
-  background-color: var(--bg-secondary-solid);
+  background-color: var(--bg-primary-solid_hover);
 }
 
 .primary:disabled {
@@ -41,7 +41,7 @@
   color: var(--fg-primary);
   border-radius: 50%;
   border: 1px solid var(--border-primary);
-  box-shadow: var(--soft-shadow);
+  box-shadow: var(--shadow);
   cursor: pointer;
   transition: color 0.2s ease;
 }
