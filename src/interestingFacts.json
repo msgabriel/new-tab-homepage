@@ -6,7 +6,7 @@
   },
   {
     "id": "2",
-    "text": "A day on Venus is longer than a year (243 vs. 225 Earth days).",
+    "text": "A single day on Venus (243 Earth days) is longer than a Venusian year (225 Earth days).",
     "category": "space"
   },
   {
@@ -16,33 +16,33 @@
   },
   {
     "id": "4",
-    "text": "Cleopatra lived closer to the invention of the iPhone than to the building of the Great Pyramid.",
+    "text": "Cleopatra lived closer to the invention of the iPhone than to the construction of the Great Pyramid.",
     "category": "history"
   },
   {
     "id": "5",
-    "text": "Octopuses can rapidly edit their RNA in response to temperature changes, with some changes occurring within hours.",
+    "text": "Octopuses can adjust to cold by editing their RNA.",
     "category": "animals"
   },
   {
     "id": "6",
-    "text": "Saturn has 274 known moons, with Titan being the largest.",
+    "text": "Saturn has 274 confirmed moons, with Titan being the largest.",
     "category": "space"
   },
   {
     "id": "7",
-    "text": "The intestine regenerates its lining, known as the epithelium, every 5 to 7 days.",
+    "text": "The intestine regenerates its lining, called the epithelium, every 5 to 7 days.",
     "category": "body"
   },
   {
     "id": "8",
-    "text": "The first computer bug was a literal moth stuck in a 1947 Harvard machine.",
-    "category": "history"
+    "text": "The first computer bug was a literal moth trapped in a Harvard Mark II computer in 1947.",
+    "category": "technology"
   },
   {
     "id": "9",
-    "text": "Plants have memory, which allows them to retain information from their experiences and respond to environmental stimuli later..",
-    "category": "science"
+    "text": "Plants can retain information from past experiences and use this 'memory' to respond to environmental changes.",
+    "category": "nature"
   },
   {
     "id": "10",
@@ -51,7 +51,7 @@
   },
   {
     "id": "11",
-    "text": "The aorta, your largest artery, is as wide as a garden hose.",
+    "text": "Your aorta, the body's largest artery, is roughly as wide as a garden hose.",
     "category": "body"
   },
   {
@@ -61,23 +61,23 @@
   },
   {
     "id": "13",
-    "text": "Dolphins develop a unique signature whistle early in life, allowing them to be identified by other dolphins.",
+    "text": "Dolphins develop a unique signature whistle early in life to identify each other.",
     "category": "animals"
   },
   {
     "id": "14",
-    "text": "Neutron stars are so dense that a teaspoon would weigh 6 billion tons.",
+    "text": "Neutron stars are so incredibly dense that a single teaspoon of their matter would weigh approximately 6 billion tons.",
     "category": "space"
   },
   {
     "id": "15",
-    "text": "The human brain is composed of approximately 75% water, making hydration crucial for optimal cognitive function.",
+    "text": "The human brain is about 75% water, which is why staying hydrated is essential for optimal cognitive function.",
     "category": "body"
   },
   {
     "id": "16",
     "text": "The first webcam was invented to monitor a coffee pot at Cambridge University.",
-    "category": "history"
+    "category": "technology"
   },
   {
     "id": "17",
@@ -86,82 +86,82 @@
   },
   {
     "id": "18",
-    "text": "Pluto has a heart-shaped glacier known as Sputnik Planitia.",
+    "text": "Pluto features a distinctive heart-shaped glacier named Sputnik Planitia.",
     "category": "space"
   },
   {
     "id": "19",
-    "text": "You produce about 1 to 1.5 liters of saliva daily.",
+    "text": "Your salivary glands produce between 1 and 1.5 liters of saliva every day.",
     "category": "body"
   },
   {
     "id": "20",
-    "text": "In the 17th century condoms were often made from animal intestines, such as those of sheep, calves, or goats.",
+    "text": "In the 17th-century, condoms were commonly made from animal intestines, particularly from sheep, calves, or goats.",
     "category": "history"
   },
   {
     "id": "21",
-    "text": "Polar bears have black skin to absorb sunlight under their white fur.",
+    "text": "Polar bears have black skin underneath their white fur, which helps them absorb and retain heat from sunlight.",
     "category": "animals"
   },
   {
     "id": "22",
-    "text": "The Sun's core temperature reaches around 15 million °C (27 million °F), where nuclear fusion occurs",
+    "text": "The Sun's core temperature reaches around 15 million °C (27 million °F), hot enough to sustain nuclear fusion.",
     "category": "space"
   },
   {
     "id": "23",
-    "text": "The human brain is nearly 60% fat, which makes essential fatty acids crucial for brain health.",
+    "text": "Nearly 60% of the human brain consists of fat, making essential fatty acids vital for brain health.",
     "category": "body"
   },
   {
     "id": "24",
-    "text": "The word 'robot' comes from the Czech word 'robota', which means 'forced labor'.",
-    "category": "history"
+    "text": "The word 'robot' originates from the Czech word 'robota', which means 'forced labor'.",
+    "category": "language"
   },
   {
     "id": "25",
-    "text": "The immortal jellyfish can revert to its juvenile form, effectively resetting its lifespan.",
+    "text": "The immortal jellyfish can reverse its aging process and revert to its juvenile stage.",
     "category": "animals"
   },
   {
     "id": "26",
-    "text": "Jupiter's Great Red Spot is a vast anticyclonic storm that has been raging for at least 150 years.",
+    "text": "Jupiter's Great Red Spot is a massive storm that has been continuously raging for at least 150 years.",
     "category": "space"
   },
   {
     "id": "27",
-    "text": "The cornea is the only part of the human body that lacks a blood supply—it gets oxygen from the air.",
+    "text": "The cornea is the only part of the human body with no blood supply—it receives oxygen directly from the air.",
     "category": "body"
   },
   {
     "id": "28",
-    "text": "The first photograph was taken in 1826 and required 8 hours of exposure.",
-    "category": "history"
+    "text": "The first photograph was taken in 1826 and required at least 8 hours of exposure.",
+    "category": "technology"
   },
   {
     "id": "29",
-    "text": "Blue whales possess the largest heart of any living creature, weighing approximately 900kg.",
+    "text": "Blue whales have the largest heart of any animal on Earth, weighing about 181 kg (400 pounds).",
     "category": "animals"
   },
   {
     "id": "30",
-    "text": "Mars has the tallest volcano in the solar system — Olympus Mons, rising about 22 km (14 miles) high.",
+    "text": "Mars has the tallest volcano in our solar system — Olympus Mons — rising about 22 km (14 mi) high.",
     "category": "space"
   },
   {
     "id": "31",
-    "text": "Your tongue print is unique, like a fingerprint.",
+    "text": "Your tongue print is as unique as your fingerprint, with no two people having identical patterns.",
     "category": "body"
   },
   {
     "id": "32",
     "text": "The microwave was invented by accident after an engineer noticed a magnetron tube melted a candy bar in his pocket.",
-    "category": "history"
+    "category": "technology"
   },
   {
     "id": "33",
-    "text": "Butterflies taste with their feet.",
+    "text": "Butterflies taste with their feet, using special sensors to identify whether plants are suitable for laying eggs.",
     "category": "animals"
   },
   {
@@ -177,7 +177,7 @@
   {
     "id": "36",
     "text": "A tree absorbs anywhere between 10 and 40kg of CO2 per year.",
-    "category": "earth"
+    "category": "nature"
   },
   {
     "id": "37",
@@ -192,7 +192,7 @@
   {
     "id": "39",
     "text": "Atoms never truly stop moving, even at absolute zero—they just reach their lowest quantum vibrations.",
-    "category": "science"
+    "category": "physics"
   },
   {
     "id": "40",
@@ -201,118 +201,118 @@
   },
   {
     "id": "41",
-    "text": "A shrimp's heart is located in its head.",
+    "text": "A shrimp's heart is located in its head rather than its body.",
     "category": "animals"
   },
   {
     "id": "42",
-    "text": "The Milky Way galaxy is about 100,000 light-years wide.",
+    "text": "The Milky Way galaxy is about 100,000 light-years in diameter.",
     "category": "space"
   },
   {
     "id": "43",
-    "text": "Helium is the only element that cannot be solidified at standard pressure.",
-    "category": "science"
+    "text": "Helium is the only element that stays liquid at absolute zero unless high pressure is applied.",
+    "category": "chemistry"
   },
   {
     "id": "44",
-    "text": "At least half of the oxygen produced on Earth comes from the ocean, mostly from tiny photosynthesizing plankton.",
-    "category": "earth"
+    "text": "Phytoplankton produce about half of Earth's oxygen and help absorb carbon dioxide in the air.",
+    "category": "nature"
   },
   {
     "id": "45",
-    "text": "Sloths can hold their breath underwater for as long as 40 minutes.",
+    "text": "Three-toed sloths can hold their breath underwater for up to 40 minutes by slowing their heart rate.",
     "category": "animals"
   },
   {
     "id": "46",
-    "text": "Venus rotates clockwise, which is opposite to most planets.",
+    "text": "Venus rotates clockwise, which is the opposite direction from most planets in our solar system.",
     "category": "space"
   },
   {
     "id": "47",
-    "text": "Fire tornadoes can reach temperatures of up to 1,090°C (2,000°F).",
-    "category": "science"
+    "text": "Fire tornadoes can reach core temperatures of up to 1,090°C (2,000°F).",
+    "category": "weather"
   },
   {
     "id": "48",
-    "text": "The reason golf balls have dimples is because they help the ball fly farther by reducing air resistance.",
-    "category": "everyday"
+    "text": "Golf balls have dimples to reduce air resistance and allow the ball to fly farther.",
+    "category": "sports"
   },
   {
     "id": "49",
-    "text": "Koalas have fingerprints nearly identical to humans.",
+    "text": "Koalas have fingerprints that are remarkably similar to human fingerprints.",
     "category": "animals"
   },
   {
     "id": "50",
-    "text": "The first human-made object in space was Germany's V-2 rocket in 1944.",
-    "category": "space"
+    "text": "Germany's V-2 rocket became the first human-made object to reach space in 1944.",
+    "category": "technology"
   },
   {
     "id": "51",
-    "text": "Petrichor is the smell of rain when it falls on dry ground.",
-    "category": "science"
+    "text": "Petrichor is the earthy smell produced when rain falls on dry soil.",
+    "category": "weather"
   },
   {
     "id": "52",
-    "text": "The little pocket inside jeans was originally designed for pocket watches in the 1800s.",
-    "category": "everyday"
+    "text": "The small pocket inside jeans was originally designed to hold pocket watches in the 1800s.",
+    "category": "culture"
   },
   {
     "id": "53",
-    "text": "Baby porcupines are called porcupettes.",
-    "category": "animals"
+    "text": "Dark oxygen is oxygen produced in the deep ocean without sunlight.",
+    "category": "nature"
   },
   {
     "id": "54",
-    "text": "The Hubble Space Telescope orbits Earth at 17,000 mph (27,300 km/h).",
+    "text": "The Hubble Space Telescope orbits Earth at 27,300 km/h (17,000 mph).",
     "category": "space"
   },
   {
     "id": "55",
     "text": "Lava is not nearly hot enough to melt a diamond.",
-    "category": "science"
+    "category": "geology"
   },
   {
     "id": "56",
-    "text": "The male seahorse gives birth, not the female.",
+    "text": "Male seahorses carry and give birth to their young, not the females.",
     "category": "animals"
   },
   {
     "id": "57",
-    "text": "Moonquakes are seismic events that occur on the Moon, similar to earthquakes on Earth.",
+    "text": "Moonquakes are seismic tremors that occur on the Moon, similar to earthquakes but generally much weaker.",
     "category": "space"
   },
   {
     "id": "58",
-    "text": "If you hold a solid piece of pure gallium metal in your hand, your body heat can melt it into its liquid form.",
-    "category": "science"
+    "text": "Pure gallium metal has such a low melting point that it will melt in your hand.",
+    "category": "chemistry"
   },
   {
     "id": "59",
-    "text": "The number 142,857 is cyclic: multiplying it by 1-6 always gives the same digits in the same order.",
+    "text": "The number 142,857 is cyclic—when multiplied by 1 through 6, it produces the same six digits in a rotating sequence.",
     "category": "math"
   },
   {
     "id": "60",
-    "text": "Despite their long necks, giraffes have the same number of vertebrae as humans: seven.",
+    "text": "Despite their extremely long necks, giraffes have the same number of vertebrae as humans.",
     "category": "animals"
   },
   {
     "id": "61",
-    "text": "The largest known star is UY Scuti, a red supergiant star with a radius approximately 909 times that of the Sun.",
-    "category": "space"
+    "text": "Earwax can contain valuable indicators to a person's health, such as potential risks for certain diseases.",
+    "category": "body"
   },
   {
     "id": "62",
-    "text": "The shortest possible time interval is the Planck time (5.39 × 10⁻⁴⁴ seconds).",
-    "category": "science"
+    "text": "Planck time is the shortest measurable time interval—approximately 5.39 × 10⁻⁴⁴ seconds.",
+    "category": "physics"
   },
   {
     "id": "63",
-    "text": "The blue whale's tongue can weigh 2.7 to 3.6 metric tons (6,000 to 8,000 pounds), roughly the weight of a mature elephant.",
-    "category": "animals"
+    "text": "The Marree Man, a 3.5km geoglyph of a hunter, appeared mysteriously in the Australian desert in 1998.",
+    "category": "mystery"
   },
   {
     "id": "64",
@@ -322,181 +322,186 @@
   {
     "id": "65",
     "text": "Diamond is the hardest naturally occurring material on Earth.",
-    "category": "science"
+    "category": "geology"
   },
   {
     "id": "66",
-    "text": "Bamboo is the world's fastest-growing plant. Some types can grow a full meter in a single day.",
-    "category": "earth"
-  },
-  {
-    "id": "67",
-    "text": "Hippos are the closest living relatives to whales and dolphins.",
+    "text": "Wood frogs can freeze solid in winter and thaw back to life in spring.",
     "category": "animals"
   },
   {
-    "id": "68",
-    "text": "The Kármán line marks the boundary between Earth's atmosphere and space at 100 kilometers (62 miles) altitude.",
+    "id": "67",
+    "text": "The Kármán line marks the boundary between Earth's atmosphere and space at 100 km (62 mi) altitude.",
     "category": "space"
   },
   {
-    "id": "69",
+    "id": "68",
     "text": "Hydrogen makes up roughly 75% of the observable universe.",
-    "category": "science"
+    "category": "chemistry"
   },
   {
-    "id": "70",
+    "id": "69",
     "text": "The snailfish is the deepest recorded fish species, which was filmed at a depth of 8,336 meters (27,349 feet).",
     "category": "animals"
   },
   {
-    "id": "71",
+    "id": "70",
     "text": "The ISS orbits Earth once every 92 min, which allows astronauts to see as many as 16 sunrises and sunsets a day.",
     "category": "space"
   },
   {
-    "id": "72",
+    "id": "71",
     "text": "The word 'laser' stands for 'Light Amplification by Stimulated Emission of Radiation'.",
-    "category": "science"
+    "category": "physics"
+  },
+  {
+    "id": "72",
+    "text": "The first photo of Earth from space was taken in 1946 by a V-2 rocket.",
+    "category": "technology"
   },
   {
     "id": "73",
-    "text": "The tiger pistol shrimp generates a powerful shockwave by rapidly snapping its large claw.",
-    "category": "animals"
-  },
-  {
-    "id": "74",
-    "text": "The first photo of Earth from space was taken in 1946 by a V-2 rocket.",
-    "category": "space"
-  },
-  {
-    "id": "75",
     "text": "The smallest possible black hole could be as small as an atom but have the mass of a large mountain.",
     "category": "science"
   },
   {
-    "id": "76",
+    "id": "74",
     "text": "It takes about 12 worker bees their entire lives to produce a single teaspoon of honey.",
     "category": "animals"
   },
   {
-    "id": "77",
+    "id": "75",
     "text": "Uranus' extreme axial tilt causes the planet to rotate on its side, producing unique seasons.",
     "category": "space"
   },
   {
-    "id": "78",
+    "id": "76",
     "text": "The smell of metal is actually the scent of your skin corroding the metal.",
-    "category": "science"
+    "category": "chemistry"
   },
   {
-    "id": "79",
-    "text": "The mimic octopus can impersonate over 15 different sea creatures to deter predators.",
+    "id": "77",
+    "text": "The mimic octopus can impersonate more than 15 different marine species to avoid predators.",
     "category": "animals"
   },
   {
-    "id": "80",
-    "text": "The Moon's surface is covered in a layer of dust called regolith.",
+    "id": "78",
+    "text": "The Moon's surface is covered in a dusty layer called regolith, created by billions of years of meteorite impacts.",
     "category": "space"
   },
   {
-    "id": "81",
+    "id": "79",
     "text": "The oldest known DNA ever found on earth dates back approximately 2 million years.",
-    "category": "science"
+    "category": "biology"
   },
   {
-    "id": "82",
+    "id": "80",
     "text": "Monotremes are the only group of living mammals that reproduce by laying eggs.",
     "category": "animals"
   },
   {
-    "id": "83",
-    "text": "Voyager 1 is the most distant human-made object, located over 25 billion km (~15 billion miles) from Earth",
+    "id": "81",
+    "text": "Voyager 1 is the most distant human-made object, located over 25.2 billion km (15.6 billion mi) away and counting.",
     "category": "space"
   },
   {
-    "id": "84",
+    "id": "82",
     "text": "Any month that starts on a Sunday contains a Friday the 13th.",
     "category": "math"
   },
   {
+    "id": "83",
+    "text": "The word 'astronaut' comes from the Greek astron ('star') and nautēs ('sailor'), literally meaning 'star sailor'.",
+    "category": "language"
+  },
+  {
+    "id": "84",
+    "text": "Prolonged focus on a repetitive task can shape our thoughts and dreams—a phenomenon called the Tetris Effect.",
+    "category": "psychology"
+  },
+  {
     "id": "85",
-    "text": "A group of owls is called a parliament.",
-    "category": "animals"
+    "text": "Hyperion, the tallest tree on Earth, towers over the Statue of Liberty by about 22 meters.",
+    "category": "nature"
   },
   {
     "id": "86",
-    "text": "The word 'astronaut' comes from the Greek astron ('star') and nautēs ('sailor'), literally meaning 'star sailor.'",
+    "text": "The fastest known neutron star spins 716 times per second—faster than most kitchen blenders.",
     "category": "space"
   },
   {
     "id": "87",
-    "text": "The fastest land animal is the cheetah, which can go from 0 to 100 km/h (0 to 60 mph) in just 3 seconds.",
-    "category": "animals"
-  },
-  {
-    "id": "88",
-    "text": "Hyperion, the tallest tree on Earth, towers over the Statue of Liberty by 21 meters.",
-    "category": "earth"
-  },
-  {
-    "id": "89",
-    "text": "Famously slow-moving, a sloth travels at an average speed of 0.24 km/h (0.15 mph)",
-    "category": "animals"
-  },
-  {
-    "id": "90",
     "text": "The bee hummingbird is the smallest living bird and produces eggs as small as coffee beans.",
     "category": "animals"
   },
   {
+    "id": "88",
+    "text": "Your bone marrow produces billions of new blood cells every day through a process called hematopoiesis.",
+    "category": "body"
+  },
+  {
+    "id": "89",
+    "text": "The whale shark is the largest fish in the world, capable of growing up to 18 meters (60 feet).",
+    "category": "animals"
+  },
+  {
+    "id": "90",
+    "text": "People tend to assume their own opinions and habits are more common than they actually are—a bias called the false-consensus effect.",
+    "category": "psychology"
+  },
+  {
     "id": "91",
-    "text": "The electric eel can generate shocks up to 600 volts.",
-    "category": "animals"
-  },
-  {
-    "id": "92",
-    "text": "Bone marrow is the fastest-growing tissue, producing billions of new blood cells every day.",
-    "category": "science"
-  },
-  {
-    "id": "93",
-    "text": "The whale shark is the largest fish in the world, which has been known to get as large as 18 meters (60 feet)",
-    "category": "animals"
-  },
-  {
-    "id": "94",
-    "text": "Bats are the only mammals capable of true, sustained flight.",
-    "category": "animals"
-  },
-  {
-    "id": "95",
     "text": "Ants can carry 10 to 50 times their body weight due to their high ratio of muscle tissue to body mass.",
     "category": "animals"
   },
   {
-    "id": "96",
+    "id": "92",
     "text": "Antarctica is the only continent without reptiles or snakes.",
-    "category": "earth"
+    "category": "geography"
+  },
+  {
+    "id": "93",
+    "text": "The hummingbird is the only bird capable of sustained backward flight.",
+    "category": "animals"
+  },
+  {
+    "id": "94",
+    "text": "Lake Vostok is Antarctica's largest known subglacial lake, buried beneath about 4 km (2.5 mi) of ice.",
+    "category": "geography"
+  },
+  {
+    "id": "95",
+    "text": "There's an orchestra made up entirely of typewriters.",
+    "category": "culture"
+  },
+  {
+    "id": "96",
+    "text": "Some tourists who visit Paris develop extreme symptoms when the city does not live up to their expectations.",
+    "category": "psychology"
   },
   {
     "id": "97",
-    "text": "The peregrine falcon is the fastest animal, capable of reaching diving speeds over 320 km/h (200 mph)",
-    "category": "animals"
+    "text": "Airlines typically require pilots to eat different meals to avoid both getting sick from potential food poisoning.",
+    "category": "aviation"
   },
   {
     "id": "98",
-    "text": "The only bird that can fly backward is the hummingbird.",
-    "category": "animals"
+    "text": "You can make diamonds out of peanut butter by mimicking the extreme conditions found deep within Earth.",
+    "category": "chemistry"
   },
   {
     "id": "99",
-    "text": "The lyrebird can mimic chainsaws, car alarms, and camera shutters.",
-    "category": "animals"
+    "text": "The human chin remains an evolutionary mystery.",
+    "category": "body"
   },
   {
     "id": "100",
-    "text": "Lake Vostok is the largest known subglacial lake in Antarctica.",
-    "category": "earth"
+    "text": "CAPTCHA stands for 'Completely Automated Public Turing test to tell Computers and Humans Apart'.",
+    "category": "technology"
+  },
+  {
+    "id": "101",
+    "text": "Each person's scent is unique, influenced by factors such as genetics, diet, and health.",
+    "category": "body"
   }
 ]
