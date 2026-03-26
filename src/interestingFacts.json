@@ -503,5 +503,55 @@
     "id": "101",
     "text": "Each person's scent is unique, influenced by factors such as genetics, diet, and health.",
     "category": "body"
+  },
+  {
+    "id": "102",
+    "text": "Cows form close bonds and exhibit signs of anxiety when separated from their companions.",
+    "category": "animals"
+  },
+  {
+    "id": "103",
+    "text": "Despite making up just 2% of your body weight, the brain consumes 20% of your oxygen supply and 25% of your glucose.",
+    "category": "body"
+  },
+  {
+    "id": "104",
+    "text": "'Forty' is the only number spelled with its letters in alphabetical order. 'One' is the only one in reverse.",
+    "category": "math"
+  },
+  {
+    "id": "105",
+    "text": "Atomic clocks are precise enough to detect time dilation. They run slightly faster at higher altitudes where gravity is weaker.",
+    "category": "physics"
+  },
+  {
+    "id": "106",
+    "text": "The speed of a computer mouse is measured in 'Mickeys'.",
+    "category": "technology"
+  },
+  {
+    "id": "107",
+    "text": "The illusory truth effect is the tendency to believe false information to be correct after repeated exposure.",
+    "category": "psychology"
+  },
+  {
+    "id": "108",
+    "text": "Zaha Hadid refused to use right angles in her architectural designs, earning her the nickname 'Queen of the Curve'.",
+    "category": "architecture"
+  },
+  {
+    "id": "109",
+    "text": "The hydrogen atoms in your body were forged in the Big Bang, making roughly 10% of your mass 13.8 billion years old.",
+    "category": "chemistry"
+  },
+  {
+    "id": "110",
+    "text": "Light only travels at its maximum speed in a vacuum. In water, it slows down to about 75% of that.",
+    "category": "physics"
+  },
+  {
+    "id": "111",
+    "text": "The name 'Velcro' is a portmanteau of the French words velours (velvet) and crochet (hook).",
+    "category": "language"
   }
 ]

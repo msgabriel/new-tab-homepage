@@ -1,21 +1,18 @@
-import { randoItem } from '../utils'
-
-const quotes = Object.values(
-  import.meta.glob('../assets/quote*.{png,jpg,jpeg}', {
-    eager: true,
-    import: 'default',
-  }),
-)
-
-const randomImage = randoItem(quotes)
+const quoteImages = import.meta.glob('../assets/*.webp', {
+  eager: true,
+  import: 'default',
+}) as Record<string, string>
 
 export function Quote() {
+  const day = new Date().getDay() // Sunday - Saturday : 0 - 6
+  const todayImage = quoteImages[`../assets/${day}.webp`]
+
   return (
     <section
       id="quote"
       className="container"
       style={{
-        background: `center / cover url(${randomImage})`,
+        background: `center / cover url(${todayImage})`,
       }}
     ></section>
   )
