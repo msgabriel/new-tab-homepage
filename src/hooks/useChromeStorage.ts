@@ -18,8 +18,8 @@ export function useChromeStorage<T>(
         setIsLoading(false)
         return
       }
-      if (result[key] !== undefined) {
-        setStoredValue(result[key])
+      if (result[key] !== undefined && result[key] !== null) {
+        setStoredValue(result[key] as T)
       }
       setIsLoading(false)
     })
