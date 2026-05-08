@@ -18,6 +18,7 @@ type BookmarkItemProps = {
   onDragOver: (e: React.DragEvent, index: number) => void
   onDrop: (e: React.DragEvent, index: number) => void
   onDragEnd: () => void
+  isDragging: boolean
   isDraggedOver: boolean
 }
 
@@ -32,6 +33,7 @@ export function BookmarkItem({
   onDragOver,
   onDrop,
   onDragEnd,
+  isDragging,
   isDraggedOver,
 }: BookmarkItemProps) {
   const [faviconBrightness, setFaviconBrightness] = useState<
@@ -53,7 +55,6 @@ export function BookmarkItem({
   useEffect(() => {
     const media = window.matchMedia('(prefers-color-scheme: dark)')
     const listener = (e: MediaQueryListEvent) => setDarkMode(e.matches)
-
     media.addEventListener('change', listener)
     return () => media.removeEventListener('change', listener)
   }, [])
@@ -63,7 +64,10 @@ export function BookmarkItem({
     (faviconBrightness === 'black' && darkMode)
 
   return (
-    <li onDragOver={e => onDragOver(e, index)}>
+    <li
+      className={`${isDragging ? styles.liDragging : ''} ${isDraggedOver ? styles.dragOver : ''}`}
+      onDragOver={e => onDragOver(e, index)}
+    >
       <a
         href={bookmark.url}
         data-type="bookmark-item"
@@ -74,12 +78,7 @@ export function BookmarkItem({
         onDrop={e => onDrop(e, index)}
         onContextMenu={onContextMenu}
       >
-        <div
-          data-type="bookmark-icon"
-          className={`${styles.bookmarkIcon} ${
-            isDraggedOver ? styles.dragOver : ''
-          }`}
-        >
+        <div data-type="bookmark-icon" className={styles.bookmarkIcon}>
           <img
             src={getFavicon(bookmark.url)}
             alt="favicon"

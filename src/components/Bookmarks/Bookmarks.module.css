@@ -17,7 +17,15 @@
 #bookmarks li {
   display: inline-block;
   position: relative;
-  animation: none;
+  transition: transform 0.2s cubic-bezier(0.2, 0, 0, 1);
+}
+
+.liDragging {
+  opacity: 0.3;
+}
+
+.dragOver {
+  transform: scale(0.9);
 }
 
 .bookmarkItem {
@@ -38,15 +46,9 @@
   width: 64px;
   height: 64px;
   margin: auto;
-  transition: border 0.5ms;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.bookmarkIcon.dragOver {
-  border: 1px solid var(--border-primary-solid);
-  opacity: 0.25;
 }
 
 .bookmarkTitle p {

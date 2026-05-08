@@ -24,15 +24,10 @@ export function Bookmarks() {
 
   useEffect(() => {
     const handleDocumentClick = () => {
-      if (contextMenu) {
-        setContextMenu(null)
-      }
+      if (contextMenu) setContextMenu(null)
     }
-
     document.addEventListener('click', handleDocumentClick)
-    return () => {
-      document.removeEventListener('click', handleDocumentClick)
-    }
+    return () => document.removeEventListener('click', handleDocumentClick)
   }, [contextMenu])
 
   const handleFormSubmit = (title: string, url: string) => {
@@ -87,7 +82,11 @@ export function Bookmarks() {
               onDragOver={dragAndDrop.handleDragOver}
               onDrop={dragAndDrop.handleDrop}
               onDragEnd={dragAndDrop.handleDragEnd}
-              isDraggedOver={dragAndDrop.dragOverIndex === index}
+              isDragging={dragAndDrop.draggedIndex === index}
+              isDraggedOver={
+                dragAndDrop.dragOverIndex === index &&
+                dragAndDrop.draggedIndex !== index
+              }
             />
           ))}
         </ul>

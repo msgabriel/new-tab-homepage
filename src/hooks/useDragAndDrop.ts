@@ -1,4 +1,3 @@
-// useDragAndDrop.ts
 import { useRef, useState } from 'react'
 import { SiteBookmark } from './useBookmarks'
 
@@ -7,6 +6,7 @@ export function useDragAndDrop(
 ) {
   const draggedItemRef = useRef<SiteBookmark | null>(null)
   const draggedIndexRef = useRef<number | null>(null)
+  const [draggedIndex, setDraggedIndex] = useState<number | null>(null)
   const [dragOverIndex, setDragOverIndex] = useState<number | null>(null)
 
   const handleDragStart = (
@@ -16,38 +16,33 @@ export function useDragAndDrop(
   ) => {
     draggedItemRef.current = item
     draggedIndexRef.current = index
+    setDraggedIndex(index)
 
-    const target = e.currentTarget as HTMLElement
-    const icon = target.querySelector(
+    const icon = (e.currentTarget as HTMLElement).querySelector(
       '[data-type="bookmark-icon"]',
     ) as HTMLElement | null
-
-    if (icon) {
-      e.dataTransfer.setDragImage(icon, 32, 32)
-    }
+    if (icon) e.dataTransfer.setDragImage(icon, 32, 32)
   }
 
-  const handleDragOver = (e: React.DragEvent, targetIndex: number) => {
+  const handleDragOver = (e: React.DragEvent, index: number) => {
     e.preventDefault()
-    setDragOverIndex(targetIndex)
+    setDragOverIndex(index)
   }
 
   const handleDrop = (e: React.DragEvent, targetIndex: number) => {
     e.preventDefault()
-
     const draggedItem = draggedItemRef.current
-    const draggedIndex = draggedIndexRef.current
-
-    if (draggedItem && draggedIndex !== null && draggedIndex !== targetIndex) {
+    const fromIndex = draggedIndexRef.current
+    if (draggedItem && fromIndex !== null && fromIndex !== targetIndex) {
       onReorder(draggedItem, targetIndex)
     }
-
     setDragOverIndex(null)
   }
 
   const handleDragEnd = () => {
     draggedItemRef.current = null
     draggedIndexRef.current = null
+    setDraggedIndex(null)
     setDragOverIndex(null)
   }
 
@@ -56,7 +51,7 @@ export function useDragAndDrop(
     handleDragOver,
     handleDrop,
     handleDragEnd,
-    draggedIndex: draggedIndexRef.current,
+    draggedIndex,
     dragOverIndex,
   }
 }
